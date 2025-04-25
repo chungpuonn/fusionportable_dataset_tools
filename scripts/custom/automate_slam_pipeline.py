@@ -65,14 +65,22 @@ slam_algorithms = {
     },
     "vins": {
         "launch_file": "vins_rviz.launch",
-        "config_file": {"ugv": "ramlab_dataset_20230426Calib_ugv/ramlab_stereo_imu_config.yaml",
+        "config_file": {
+                        "handheld": "ramlab_dataset_20230403Calib_handheld/ramlab_stereo_imu_config.yaml",
+                        "ugv": "ramlab_dataset_20230426Calib_ugv/ramlab_stereo_imu_config.yaml",
                         "vehicle": "ramlab_dataset_20230618Calib_vehicle/ramlab_stereo_imu_config.yaml",
-                        "handheld": "ramlab_dataset_20230426Calib_handheld/ramlab_stereo_imu_config.yaml",
-                        "legged": "ramlab_dataset_20230912Calib_legged/ramlab_stereo_imu_config.yaml"},
+                        "legged": "ramlab_dataset_20230912Calib_legged/ramlab_stereo_imu_config.yaml"
+                        },
         "output_topic": "/vins_estimator/odometry"
     },
     # "r3live": {
     #     "launch_file": "r3live_bag_fusionportable.launch",
+    #     "config_path": {
+    #                     "handheld": "ramlab_dataset_20230403Calib_handheld/r3live_config.yaml",
+    #                     "ugv": "ramlab_dataset_20230426Calib_ugv/r3live_config.yaml",
+    #                     "vehicle": "ramlab_dataset_20230618Calib_vehicle/r3live_config.yaml",
+    #                     "legged": "ramlab_dataset_20230912Calib_legged/r3live_config.yaml"
+    #                     },
     #     "output_topic": "/aft_mapped_to_init"
     # }
 }
